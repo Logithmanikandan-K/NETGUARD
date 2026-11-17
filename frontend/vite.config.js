@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Change from '/NETGUARD/' to '/' for Render
+  base: '/', // Must be '/' for Render
 })
