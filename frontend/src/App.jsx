@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
-
+const BACKEND_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API = `${BACKEND_URL.replace(/\/$/, "")}/api`;
 
 function App() {
   const [wifi, setWifi] = useState(null);
